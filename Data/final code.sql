@@ -1,3 +1,126 @@
+DROP TABLE titles;
+DROP TABLE dep_employees; 
+DROP TABLE salaries; 
+DROP TABLE dep_manager; 
+DROP TABLE employees; 
+CREATE TABLE employees (
+     emp_no INT NOT NULL,
+     birth_date DATE NOT NULL,
+     first_name VARCHAR NOT NULL,
+     last_name VARCHAR NOT NULL,
+     gender VARCHAR NOT NULL,
+     hire_date DATE NOT NULL,
+     PRIMARY KEY (emp_no)
+); 
+
+CREATE TABLE dep_manager(
+dept_no VARCHAR(4) NOT NULL,
+	emp_no INT NOT NULL, 
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
+	PRIMARY KEY (emp_no, dept_no)
+); 
+
+CREATE TABLE salaries(
+	emp_no INT NOT NULL, 
+    dept_no VARCHAR(4) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL, 
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+	PRIMARY KEY (emp_no)
+); 
+
+CREATE TABLE dep_employees(
+	emp_no INT NOT NULL, 
+	dept_no VARCHAR(4) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
+	PRIMARY KEY (emp_no, dept_no)
+); 
+
+CREATE TABLE titles(
+	emp_no INT NOT NULL, 
+    title VARCHAR(30) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL, 
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+	PRIMARY KEY (emp_no, title, from_date)
+); 
+
+SELECT * FROM departments; 
+SELECT * FROM employees; 
+DROP TABLE salaries CASCADE; 
+DROP TABLE dep_manager CASCADE; 
+
+CREATE TABLE dep_manager(
+dept_no VARCHAR(4) NOT NULL,
+	emp_no INT NOT NULL, 
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
+	PRIMARY KEY (emp_no, dept_no)
+); 
+
+CREATE TABLE salaries(
+	emp_no INT NOT NULL, 
+    dept_no VARCHAR(4) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL, 
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+	PRIMARY KEY (emp_no)
+); 
+
+DROP TABLE dep_employees CASCADE; 
+CREATE TABLE dep_employees(
+	emp_no INT NOT NULL, 
+	dept_no VARCHAR(4) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
+	PRIMARY KEY (emp_no, dept_no)
+); 
+
+DROP TABLE titles CASCADE; 
+CREATE TABLE titles(
+	emp_no INT NOT NULL, 
+    title VARCHAR(30) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL, 
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+	PRIMARY KEY (emp_no, title, from_date)
+); 
+
+DROP TABLE salaries CASCADE; 
+CREATE TABLE salaries(
+	emp_no INT NOT NULL, 
+    dept_no VARCHAR(4) NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL, 
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no), 
+	PRIMARY KEY (emp_no)
+); 
+
+DROP TABLE salaries CASCADE;
+CREATE TABLE salaries (
+  emp_no INT NOT NULL,
+  salary INT NOT NULL,
+  from_date DATE NOT NULL,
+  to_date DATE NOT NULL,
+  FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+  PRIMARY KEY (emp_no)
+);
+
+SELECT * FROM dep_employees;
+SELECT * FROM dep_manager;
+SELECT * FROM salaries;
+SELECT * FROM titles;
+
 SELECT first_name, last_name
 FROM employees
 WHERE birth_date BETWEEN '1952-01-01' AND '1955-12-31';
@@ -16,13 +139,14 @@ WHERE birth_date BETWEEN '1954-01-01' AND '1954-12-31';
 
 SELECT first_name, last_name
 FROM employees
-WHERE birth_date BETWEEN '1955-01-01' AND '1955-12-31'; 
+WHERE birth_date BETWEEN '1955-01-01' AND '1955-12-31';
 
 -- Retirement eligibility
 SELECT first_name, last_name
 FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31') 
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
+
 
 -- Retirement eligibility
 SELECT COUNT(first_name)
@@ -57,7 +181,6 @@ SELECT d.dept_name,
 FROM departments as d
 INNER JOIN dep_manager as dm
 ON d.dept_no = dm.dept_no; 
-
 
 --Joining retirement_info and dept_emp tables
 SELECT retirement_info.emp_no, 
@@ -128,49 +251,13 @@ ON (dm.dept_no = d.dept_no)
 INNER JOIN current_emp AS ce
 ON (dm.emp_no = ce.emp_no);
 
---List Department Retirees
 SELECT ce.emp_no, 
 	ce.first_name,
 	ce.last_name,
 	d.dept_name
--- INTO dept_info
+INTO dept_info
 FROM current_emp as ce
 INNER JOIN dep_employees AS de
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
-
---Create new table with only sales department retirees
-SELECT ri.emp_no,
-		ri.first_name,
-		ri.last_name,
-		di.dept_name
-INTO sales_department
-FROM retirement_info as ri
-INNER JOIN dept_info as di
-ON (ri.emp_no = di.emp_no)
-WHERE (di.dept_name = 'Sales'); 
-
--- potential other code for finding sales dept retirees
--- SELECT ri.emp_no,
--- 	ri.first_name,
--- 	ri.last_name,
--- 	d.dept_name
--- INTO sales_again
--- FROM retirement_info AS ri
--- 	INNER JOIN 	dep_employees AS de
--- 		ON (ri.emp_no = de.emp_no)
--- 	INNER JOIN departments AS d
--- 		ON (de.dept_no = d.dept_no)
--- WHERE (d.dept_name = 'Sales');
-
---Create new table with sales & development departments
-SELECT ri.emp_no,
-		ri.first_name,
-		ri.last_name,
-		di.dept_name
-INTO sales_department
-FROM retirement_info as ri
-INNER JOIN dept_info as di
-ON (ri.emp_no = di.emp_no)
-WHERE di.dept_name IN ('Sales', 'Development'); 
