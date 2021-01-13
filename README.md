@@ -7,9 +7,18 @@ The initial data for the project came from six CSV files. These files contained 
 ![EmployeeDB](https://user-images.githubusercontent.com/73972332/104393837-3f91a980-54fa-11eb-9cfe-2aa2adcb2676.png)
 ## Results 
 * A total of 90,398 employees are about to retire from the company. This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv"
+
 ![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
+
 * The majority of the staff ready to retire are Senior Engineers, and Senior Staff. This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
+
 ![retiring_titles](https://user-images.githubusercontent.com/73972332/104395018-a7e18a80-54fc-11eb-9e1f-99a10596d946.png)
+
 * There are 1,549 employees eligible for the mentorship program. This data can be found by viewing the "mentorship_eligibility" table in the database or in the exported csv "mentorship_eligibilitys.csv"
+
 ![mentorship_eligibility](https://user-images.githubusercontent.com/73972332/104404149-dd8f6f00-550e-11eb-83d1-0913cedcf444.png)
+
 ## Summary
+Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
