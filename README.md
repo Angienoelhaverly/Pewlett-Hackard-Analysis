@@ -43,8 +43,10 @@ High Level Overview
 
 ### Qualified Staff Available to Mentor
 ![qualified_staff](https://user-images.githubusercontent.com/73972332/104495811-0f471b00-558d-11eb-89da-69aa4daae06a.png)
+
+
 Two additional queries or tables that may provide more insight
-Retirees by Department
+
 
 ### Retiring Employees by Department
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
