@@ -26,5 +26,5 @@ The ERD maps the relationships between the files which will be used to create th
 
 ## Summary
 Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+* How many roles will need to be filled as the "silver tsunami" begins to make an impact?: According to the database, 90,398 roles will have to be filled in the next few years. The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled, respectively. 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
