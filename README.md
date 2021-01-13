@@ -8,4 +8,6 @@ The initial data for the project came from six CSV files. These files contained 
 ## Results 
 * A total of 90,398 employees are about to retire from the company. This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv"
 ![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
+* The majority of the staff ready to retire are Senior Engineers, and Senior Staff. This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
+![retiring_titles](https://user-images.githubusercontent.com/73972332/104395018-a7e18a80-54fc-11eb-9e1f-99a10596d946.png)
 ## Summary
