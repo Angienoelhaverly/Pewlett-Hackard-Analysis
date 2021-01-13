@@ -41,5 +41,5 @@ High Level Overview
 Two additional queries or tables that may provide more insight
 Retirees by Department
 
-![retiring_dept_count](https://user-images.githubusercontent.com/73972332/104488299-03565b80-5583-11eb-9ed4-8fa1453273e8.png)
+![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
