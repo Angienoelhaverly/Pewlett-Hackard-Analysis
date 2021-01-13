@@ -6,4 +6,8 @@ The initial data for the project came from six CSV files. These files contained 
 #### ERD: Entity Relationship Diagram
 ![EmployeeDB](https://user-images.githubusercontent.com/73972332/104393837-3f91a980-54fa-11eb-9cfe-2aa2adcb2676.png)
 ## Results 
+Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+* A total of 90,398 employees are about to retire from the company. This data is shown by viewing the "unique_titles" table in the database or the exported csv "unique_titles.csv"
+![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
+* Bullet list item 2
 ## Summary
