@@ -37,9 +37,12 @@ High Level Overview
     * According to the database, 90,398 roles will have to be filled in the next few years. 
     * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled. 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+    * After running a query that checks to see how many retirement ready staff are available to mentor the next generation, it is clear that there are enough staff who are ready to retire that can handle the mentorship program. The query below shows how many retirement ready staff there are by title. 
 
 Two additional queries or tables that may provide more insight
 Retirees by Department
 
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
+
+![qualified_staff](https://user-images.githubusercontent.com/73972332/104495811-0f471b00-558d-11eb-89da-69aa4daae06a.png)
 
