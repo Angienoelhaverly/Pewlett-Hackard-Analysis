@@ -24,11 +24,13 @@ The ERD maps the relationships between the files which will be used to create th
 * There are 1,549 employees eligible for the mentorship program. In comparison to the total number of employees eligible to retire, this is not a very high percentage. Less than 2% in fact. 
     * However, this is still better than nothing, and at least still a plan to move forward in some level of replacement planning. 
     * This data can be found by viewing the "mentorship_eligibility" table in the database or in the exported csv "mentorship_eligibilitys.csv"
-
+### Potential Retirees Sum
 ![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
 
+### Potential Retirees by Title
 ![retiring_titles](https://user-images.githubusercontent.com/73972332/104395018-a7e18a80-54fc-11eb-9e1f-99a10596d946.png)
 
+### Employees eligible to participate in a Mentorship Program
 ![mentorship_eligibility](https://user-images.githubusercontent.com/73972332/104404149-dd8f6f00-550e-11eb-83d1-0913cedcf444.png)
 
 ## Summary
@@ -37,12 +39,14 @@ High Level Overview
     * According to the database, 90,398 roles will have to be filled in the next few years. 
     * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled. 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-    * After running a query that checks to see how many retirement ready staff are available to mentor the next generation, it is clear that there are enough staff who are ready to retire that can handle the mentorship program. The query below shows how many retirement ready staff there are by title. 
+    * After running a query that checks to see how many retirement ready staff are available to mentor the next generation (query searches for higher level employees), it is clear that there are enough staff who are ready to retire that can handle the mentorship program. The query below shows how many retirement ready staff there are by title. 
 
+### Qualified Staff Available to Mentor
+![qualified_staff](https://user-images.githubusercontent.com/73972332/104495811-0f471b00-558d-11eb-89da-69aa4daae06a.png)
 Two additional queries or tables that may provide more insight
 Retirees by Department
 
+### Retiring Employees by Department
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
-![qualified_staff](https://user-images.githubusercontent.com/73972332/104495811-0f471b00-558d-11eb-89da-69aa4daae06a.png)
 
