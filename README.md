@@ -35,10 +35,11 @@ The ERD maps the relationships between the files which will be used to create th
 High Level Overview
 * How many roles will need to be filled as the "silver tsunami" begins to make an impact?: 
     * According to the database, 90,398 roles will have to be filled in the next few years. 
-    * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled, respectively. 
+    * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled. 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 Two additional queries or tables that may provide more insight
 Retirees by Department
+
 ![retiring_dept_count](https://user-images.githubusercontent.com/73972332/104487983-9e9b0100-5582-11eb-9006-d30f441f2070.png)
 
