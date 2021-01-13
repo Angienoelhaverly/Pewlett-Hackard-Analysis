@@ -7,8 +7,8 @@ The initial data for the project came from six CSV files. These files contained 
 ![EmployeeDB](https://user-images.githubusercontent.com/73972332/104393837-3f91a980-54fa-11eb-9cfe-2aa2adcb2676.png)
 ## Results 
 * A total of 90,398 employees are about to retire from the company. 
-** This represents 30% of the company's total 300,024 employees. This is a staggering number of employees who will be retiring soon and definitely confirms that HR needs to put into action immediate strategy to prepare for their replacement. 
-** This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv". 
+    ** This represents 30% of the company's total 300,024 employees. This is a staggering number of employees who will be retiring soon and definitely confirms that HR needs to put into action immediate strategy to prepare for their replacement. 
+    ** This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv". 
 * The majority of the staff ready to retire are Senior Engineers (33% of total retiring), and Senior Staff (32% of total retiring). 
 ** This outcome will leave quite a gap in the technical department and high level skill. These positions are also ones that require a higher portion of training, development, and skill. The company indeed has a challenge ahead. 
 ** This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
