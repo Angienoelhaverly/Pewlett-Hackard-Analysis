@@ -6,15 +6,10 @@ The initial data for the project came from six CSV files. These files contained 
 #### ERD: Entity Relationship Diagram
 ![EmployeeDB](https://user-images.githubusercontent.com/73972332/104393837-3f91a980-54fa-11eb-9cfe-2aa2adcb2676.png)
 ## Results 
-* A total of 90,398 employees are about to retire from the company. 
-    ** This represents 30% of the company's total 300,024 employees. This is a staggering number of employees who will be retiring soon and definitely confirms that HR needs to put into action immediate strategy to prepare for their replacement. 
-    ** This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv". 
-* The majority of the staff ready to retire are Senior Engineers (33% of total retiring), and Senior Staff (32% of total retiring). 
-** This outcome will leave quite a gap in the technical department and high level skill. These positions are also ones that require a higher portion of training, development, and skill. The company indeed has a challenge ahead. 
-** This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
-* There are 1,549 employees eligible for the mentorship program. 
-** In comparison to the total number of employees eligible to retire, this is not a very high percentage. Less than 2% in fact. However, this is still better than nothing, and at least still a plan to move forward in some level of replacement planning. 
-** This data can be found by viewing the "mentorship_eligibility" table in the database or in the exported csv "mentorship_eligibilitys.csv"
+* A total of 90,398 employees are about to retire from the company. This represents 30% of the company's total 300,024 employees. This is a staggering number of employees who will be retiring soon and definitely confirms that HR needs to put into action immediate strategy to prepare for their replacement. This data can be found by viewing the "unique_titles" table in the database or in the exported csv "unique_titles.csv". 
+* The majority of the staff ready to retire are Senior Engineers (33% of total retiring), and Senior Staff (32% of total retiring). This outcome will leave quite a gap in the technical department and high level skill. These positions are also ones that require a higher portion of training, development, and skill. The company indeed has a challenge ahead. This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
+* The least amount of employees who need replacing include Assistant Engineers and Managers. Hopefully this smaller number for Assistant Engineers will provide the company with some wiggle room to quickly train up the Assistant Engineers to become promoted to Senior Engineers. 
+* There are 1,549 employees eligible for the mentorship program. In comparison to the total number of employees eligible to retire, this is not a very high percentage. Less than 2% in fact. However, this is still better than nothing, and at least still a plan to move forward in some level of replacement planning. This data can be found by viewing the "mentorship_eligibility" table in the database or in the exported csv "mentorship_eligibilitys.csv"
 
 ![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
 
