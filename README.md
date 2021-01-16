@@ -48,4 +48,6 @@ Two additional queries or tables that may provide more insight
 ### Retiring Employees by Department
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
+### Available Mentors by Department
+
 
