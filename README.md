@@ -50,4 +50,6 @@ Two additional queries or tables that may provide more insight
 
 ### Available Mentors by Department
 
+### Eligible Mentors by Title
+
 
