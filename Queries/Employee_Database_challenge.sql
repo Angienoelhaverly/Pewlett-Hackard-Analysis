@@ -49,3 +49,55 @@ ON e.emp_no = ti.emp_no
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no; 
+
+-- Deliverable 3 Summary: 2 Additional Insight Tables
+-- Table 1: Retirees by Department
+
+-- Retirees by department number
+-- Joining retirement_info and dept_emp tables
+SELECT DISTINCT ON (ti.emp_no)
+	ti.emp_no,
+	ti.first_name,
+	ti.last_name,
+	d.dept_name,
+	d.dept_no, 
+	de.to_date
+INTO retiring_departments
+FROM unique_titles AS ti
+INNER JOIN dep_employees AS de
+ON ti.emp_no = de.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+
+-- Retiree Count by Department
+SELECT COUNT (rd.emp_no), rd.dept_name
+-- INTO retiring_dep_count
+FROM retiring_departments as rd
+GROUP BY dept_name
+ORDER BY COUNT DESC; 
+
+-- Eligible Mentors by Title
+SELECT COUNT (emp_no), 
+	title
+FROM mentorship_eligibilty
+GROUP BY title
+ORDER BY COUNT DESC; 
+
+-- Eligible Mentors by Department 
+SELECT COUNT (me.emp_no), 
+	--de.dept_no, 
+	d.dept_name
+FROM mentorship_eligibilty as me
+INNER JOIN dep_employees as de
+ON me.emp_no = de.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+GROUP BY d.dept_name, de.dept_no
+ORDER BY COUNT DESC; 
+
+
+
+
+
+
+
