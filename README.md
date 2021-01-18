@@ -21,8 +21,9 @@ The ERD maps the relationships between the files which will be used to create th
     * This data can be found by viewing the "retiring_titles" table in the database or in the exported csv "retiring_titles.csv"
 * The least amount of employees who need replacing include Assistant Engineers and Managers. 
     * Hopefully this smaller number for Assistant Engineers will provide the company with some wiggle room to quickly train up the Assistant Engineers to become promoted to Senior Engineers. 
-* There are 1,549 employees eligible for the mentorship program. In comparison to the total number of employees eligible to retire, this is not a very high percentage. Less than 2% in fact. 
+* There are 1,549 employees eligible for the mentorship program to act as mentees. In comparison to the total number of employees eligible to retire, this is not a very high percentage. Less than 2% in fact. These are current employees whose birth dates are between January 1, 1965 and December 31, 1965. This means they are exactly ten years younger than the current youngest who plan to retire soon.  
     * However, this is still better than nothing, and at least still a plan to move forward in some level of replacement planning. 
+    * If Pewlett Hackard decides to expand the mentorship program by increasing the age rage to 
     * This data can be found by viewing the "mentorship_eligibility" table in the database or in the exported csv "mentorship_eligibilitys.csv"
 ### Potential Retirees Sum
 ![unique_titles](https://user-images.githubusercontent.com/73972332/104394605-ceeb8c80-54fb-11eb-8755-549b40433061.png)
@@ -39,7 +40,8 @@ High Level Overview
     * According to the database, 90,398 roles will have to be filled in the next few years. 
     * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled. 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-    * There are more people retiring than there are potential mentors, which means that the company would have to create an efficient program that can cover the disparity between the number of people retiring and the number of people who can be trained to fill these positions.
+    * There are more people retiring than there are potential mentors, which means that the company would have to create an efficient program that can cover the disparity between the number of people retiring and the number of people who can be trained to fill these positions. 
+    However, there are only 1,549 eligible employees to participate in the actual mentorship program as mentees and for this reason, there actually are enough mentors to mentor through only the mentorship program. 
 
 
 Two additional queries or tables that may provide more insight
