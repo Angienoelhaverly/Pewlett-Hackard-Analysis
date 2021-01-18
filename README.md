@@ -10,7 +10,9 @@ In this analysis we use three separate tools:
 
 The ERD maps the relationships between the files which will be used to create the database and join tables to view the data in the required schema. Primary keys and foreign keys are also determined in the ERD. After the schema is created, we run queries on the tables to isolate the requested employee information. Query results are then turned into tables and exported as CSV files. 
 
+### Data & Queries
 [Queries](Queries/Employee_Database_challenge.sql)
+[Data](Data)
 
 
 #### ERD: Entity Relationship Diagram
@@ -38,7 +40,7 @@ The ERD maps the relationships between the files which will be used to create th
 ![mentorship_eligibility](https://user-images.githubusercontent.com/73972332/104404149-dd8f6f00-550e-11eb-83d1-0913cedcf444.png)
 
 ## Summary
-High Level Overview
+### High Level Overview
 * How many roles will need to be filled as the "silver tsunami" begins to make an impact?: 
     * According to the database, 90,398 roles will have to be filled in the next few years. 
     * The HR department should intially focus on Senior Enginner and Senior Staff roles as 29,414 and 28,254 positions will need to be filled. 
@@ -47,15 +49,17 @@ High Level Overview
     However, there are only 1,549 eligible employees to participate in the actual mentorship program as mentees and for this reason, there actually are enough mentors to mentor through only the mentorship program. 
 
 
-Two additional queries or tables that may provide more insight
+## Additional Queries & Tables - Further Insight
 
 ### Retiring Employees by Department
 * In viewing the employees who may retire soon by department, we can see that clearly the production and development departments will see the biggest knowledge gap with the largest amount of potential retirees. 
+* Query can be found: [Queries](Queries/Employee_Database_challenge.sql)
 
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
 ### Eligible Mentors by Department
 * In viewing the eligible mentors by department, we can see that development and production departments have the most amount of employees who can participate in the mentorship program. This is a positive for the company and program given that the development and production departments stand to lose the greatest amount of staff to retirement. 
+* Query can be found: [Queries](Queries/Employee_Database_challenge.sql)
 
 ![eligible mentors by dept](https://user-images.githubusercontent.com/73972332/104874029-bd90ee80-5906-11eb-9b40-d3bcb84873a6.png)
 
