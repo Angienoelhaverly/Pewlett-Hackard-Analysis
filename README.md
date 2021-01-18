@@ -46,12 +46,10 @@ High Level Overview
 
 Two additional queries or tables that may provide more insight
 
-
 ### Retiring Employees by Department
+In viewing the employees who may retire soon by department, we can see that clearly the production and development departments will see the biggest knowledge gap with the largest amount of potential retirees. 
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
-### Available Mentors by Department
-
-### Eligible Mentors by Title
+### Eligible Mentors by Department
 
 
