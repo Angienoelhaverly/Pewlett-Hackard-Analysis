@@ -52,5 +52,9 @@ Two additional queries or tables that may provide more insight
 ![retire_dept_count](https://user-images.githubusercontent.com/73972332/104488508-4d3f4180-5583-11eb-8f80-dfac4240257e.png)
 
 ### Eligible Mentors by Department
+* In viewing the eligible mentors by department, we can see that development and production departments have the most amount of employees who can participate in the mentorship program. This is a positive for the company and program given that the development and production departments stand to lose the greatest amount of staff to retirement. 
+
+![eligible mentors by dept](https://user-images.githubusercontent.com/73972332/104874029-bd90ee80-5906-11eb-9b40-d3bcb84873a6.png)
+
 
 
