@@ -10,6 +10,9 @@ In this analysis we use three separate tools:
 
 The ERD maps the relationships between the files which will be used to create the database and join tables to view the data in the required schema. Primary keys and foreign keys are also determined in the ERD. After the schema is created, we run queries on the tables to isolate the requested employee information. Query results are then turned into tables and exported as CSV files. 
 
+[Queries](Queries/Employee_Database_challenge.sql)
+
+
 #### ERD: Entity Relationship Diagram
 ![EmployeeDB](https://user-images.githubusercontent.com/73972332/104393837-3f91a980-54fa-11eb-9cfe-2aa2adcb2676.png)
 ## Results 
