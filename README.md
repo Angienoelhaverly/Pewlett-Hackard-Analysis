@@ -2,6 +2,8 @@
 ## Project Overview
 Data needs to live somewhere—and that’s where databases come in. SQL is the standard language for working with databases, whether it’s storing data, transforming it, or retrieving it. Anyone who works with data needs to know SQL. Specific roles that focus on it are data engineers, ETL developers, and database administrators.
 
+In the data pipeline, every tool available to us depends on having reliable data. Databases and database languages are used not just to store data, but to extract it from various sources and serve it to the analysis tools that need it. Databases make sure that multiple users can access data at the same time without sacrificing data integrity.
+
 ## Overview of the Analysis
 The goal behind the analysis of Pewlett Hackard data is to help the management team plan and develop a strategy to identify employees who are ready retire in the near future, thus preparing for a "silver tsunami". We will use PostgreSQL to create a database with new tables in order to determine the number of retiring employees by title and identify employees who are eligible to participate in a mentorship program. 
 ### Project Overview
